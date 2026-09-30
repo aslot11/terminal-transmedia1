@@ -1,0 +1,46 @@
+/* style.css */
+body {
+  background-color: #050505;
+  color: #33ff33;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+}
+
+#crt-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none; /* Crucial para poder hacer clic a través de las líneas */
+  z-index: 999;
+}
+
+.btn-retro {
+  background: transparent;
+  border: 1px solid #33ff33;
+  color: #33ff33;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.btn-retro:hover {
+  background: #33ff33;
+  color: #000;
+  box-shadow: 0 0 10px #33ff33;
+}
+
+.cartucho {
+  width: 100px;
+  height: 150px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s;
+}
+
+.cartucho:hover {
+  transform: scale(1.1);
+  border-color: #33ff33;
+}
