@@ -1,0 +1,16 @@
+<!-- index.html -->
+<div id="crt-overlay"></div> <!-- Capa de scanlines -->
+
+<div id="pantalla-principal" class="visor">
+  <h1 id="titulo-franquicia" class="texto-neon">SELECCIONA UN ARCHIVO</h1>
+  <div id="contenedor-botones" class="flex-column">
+    <!-- Los botones se generan desde JS -->
+  </div>
+</div>
+
+<!-- Carrusel de selección -->
+<div id="carrusel" class="flex-row">
+  <img src="thumb_fnaf.jpg" class="cartucho" onclick="cargarFranquicia('fnaf')">
+  <img src="thumb_inazuma.jpg" class="cartucho" onclick="cargarFranquicia('inazuma')">
+  <!-- Resto de carátulas -->
+</div>
